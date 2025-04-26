@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <!-- ✅ Wrap everything inside ONE LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 🔔 Notification Icon Top Right -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👋 Welcome, User"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <ImageView
+                android:id="@+id/notificationIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_notifications"
+                android:contentDescription="Notifications" />
+        </RelativeLayout>
+
+        <!-- 💼 Account Summary -->
+        <TextView
+            android:id="@+id/accountSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accounts: 0 | Total Balance: $0.00"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🧩 Grid Dashboard (without Logout) -->
+        <GridLayout
+            android:id="@+id/dashboardGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnAddBank"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:text="➕ Add Bank"
+                android:backgroundTint="@color/purple_200"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnTransferFunds"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:text="💸 Transfer"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnReports"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:text="📊 Reports"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnViewAccounts"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:text="🏦 My Accounts"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+
+        <!-- 🚪 Logout (outside grid, full-width) -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="🚪 Logout"
+            android:textSize="16sp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

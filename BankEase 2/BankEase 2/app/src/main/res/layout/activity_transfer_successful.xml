@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ✅ Success Icon -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check_circle"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Success" />
+
+        <!-- 🎉 Receipt Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Receipt"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Date generated -->
+        <TextView
+            android:id="@+id/textDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generated on: 2024-01-01 10:20:30"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Line Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 💰 Amount -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Amount"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Type"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INTER-BANK"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Sender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sender"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textSenderAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Beneficiary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beneficiary"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textRecipientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jane Smith"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textBeneficiaryAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textBeneficiaryBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Union Bank for Africa Plc"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 🧾 Receipt -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Reference"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textReceiptNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NXG123456789"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- ✅ Status -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Status"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transfer Request Successful"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="32dp" />
+
+        <!-- 🔙 Go to Dashboard -->
+        <Button
+            android:id="@+id/btnGoToDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+    </LinearLayout>
+</ScrollView>

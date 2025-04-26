@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "191024905190",
+    "project_id": "bankease-a256f",
+    "storage_bucket": "bankease-a256f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191024905190:android:d97fa8ab30a114919a3427",
+        "android_client_info": {
+          "package_name": "com.example.bankease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD8wEOcVdCXyUY3aKR45YKzpdlAP9K_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
